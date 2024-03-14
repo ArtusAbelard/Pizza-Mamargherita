@@ -1,0 +1,93 @@
+[
+    {
+      "id": 0,
+      "category": "Pizza",
+      "name": "Chicken Barbeq",
+      "topping": [
+        "Tomate",
+        "Ost",
+        "chicken",
+        "olive",
+        "mozzarella"
+      ],
+      "price": 15,
+      "rank": 3,
+      "img": "https://familypizza.be/wp-content/uploads/2023/05/chicken-barbecq-420x420.png"
+    },
+    {
+      "id": 1,
+      "category": "Pizza",
+      "name": "Bruxelloise",
+      "topping": [
+        "Tomate",
+        "Ost",
+        "bacon",
+        "olive"
+      ],
+      "price": 8,
+      "rank": 1,
+      "img": "https://familypizza.be/wp-content/uploads/2021/06/new-pizza9-420x420.jpg"
+    },
+    {
+      "id": 2,
+      "category": "Pizza",
+      "name": "Parma",
+      "topping": [
+        "Tomate",
+        "Ost",
+        "Parmaskinka",
+        "Oliver",
+        "Färska basilika"
+      ],
+      "price": 10,
+      "rank": 2,
+      "img": "https://familypizza.be/wp-content/uploads/2023/05/parmigiana-420x420.png"
+    },
+    {
+        "id": 3,
+        "category": "Pizza",
+        "name": "Pizza de mama",
+        "topping": [
+          "Tomate",
+          "salami",
+          "paprika",
+          "chips",
+          "merguez"
+          
+        ],
+        "price": 12,
+        "rank": 2,
+        "img" : "https://familypizza.be/wp-content/uploads/2023/05/volcano-420x420.png"
+      },
+      {
+        "id": 4,
+        "category": "Pizza",
+        "name": "Quatro fromagy",
+        "topping": [
+          "Tomate",
+          "gargonzola",
+          "roquefort",
+          "emental",
+          "fromagy"
+        ],
+        "price": 9,
+        "rank": 2,
+        "img":"https://familypizza.be/wp-content/uploads/2023/05/4-fromages-420x420.png"
+      },
+      {
+        "id": 5,
+        "category": "Pizza",
+        "name": "Peperoni",
+        "topping": [
+          "Tomate",
+          "Ost",
+          "salami",
+          "Olive",
+          "fromagy"
+        ],
+        "price": 11,
+        "rank": 2,
+        "img":"https://familypizza.be/wp-content/uploads/2023/05/americaine-420x420.png"
+      }
+    
+  ]

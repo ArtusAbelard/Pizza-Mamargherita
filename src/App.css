@@ -1,0 +1,75 @@
+.pizza{
+    background-repeat: no-repeat;
+    
+    animation: rotating 10s linear infinite;
+    width: 40rem;
+    height: 40rem;
+    left: -20.2rem;
+    margin-top: 6rem;
+    position: absolute;
+
+    background-size: 110%;
+    background-position: center;
+
+}
+
+.bgpizz{
+    background-image: url("./assets/img/bgpizza.jpg");
+}
+
+.pizza1{
+    background-image: url(https://familypizza.be/wp-content/uploads/2023/05/chicken-barbecq-420x420.png);
+    background-size: 115%;
+
+}
+.pizza2{
+    background-image: url(https://familypizza.be/wp-content/uploads/2021/06/new-pizza9-420x420.jpg);
+    
+
+}
+.pizza3{
+    background-image: url(https://familypizza.be/wp-content/uploads/2023/05/volcano-420x420.png);
+    background-size: 125%;
+
+}
+.pizza4{
+    background-image: url(https://familypizza.be/wp-content/uploads/2023/05/4-fromages-420x420.png);
+    background-size: 125%;
+
+}
+.pizza4{
+    background-image: url(https://familypizza.be/wp-content/uploads/2023/05/americaine-420x420.png);
+
+}
+.details{
+    background-image: url(./assets/img/detail1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pizzdetails{
+    animation: rotating 30s linear infinite;
+    
+}
+
+.ewa{
+    box-shadow: 0px 0px 43px 12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 43px 12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 43px 12px rgba(0,0,0,0.75);
+    background-image: url(./assets/img/detail1.jpg);
+}
+.txtname{
+    color: #444444;
+
+text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+@keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
