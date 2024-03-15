@@ -8,21 +8,15 @@ import { useState } from 'react';
 export default function Panier(props) {
     const panier = useSelector((state) => state.panier)
     const dispatch = useDispatch();
-    
     const [idpanier, setidpanier] = useState([])
-    
     function remove(Element) {
         setidpanier(panier.panier.indexOf(Element))
         dispatch(panierremove(idpanier))
         dispatch(prixremove(idpanier))
     }
 
-    useEffect(() => {
-        console.log(idpanier);
-    }, [remove])
     const panierr = panier.prix;
     const somme = panierr.reduce((acc, valeur) => acc + valeur, 0);
-    console.log(somme); 
 
     return (
         <div className='w-[100%] overflow-x-hidden min-h-[100dvh] flex flex-col items-center '>
