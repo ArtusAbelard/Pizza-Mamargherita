@@ -4,6 +4,7 @@ export const panier = createSlice({
   name: 'panier',
   initialState: {
     panier:[],
+    prix:[],
     id:''
      
   },
@@ -16,6 +17,12 @@ export const panier = createSlice({
     },
     panierremove: (state, action) => {
         state.panier.splice(action.payload,1)
+    },
+    prixset: (state,action) => {
+      state.prix.push(action.payload)
+    },
+    prixremove: (state,action) => {
+      state.prix.splice(action.payload,1)
     }
 
     // indexfind: (state ,action) => {
@@ -24,6 +31,6 @@ export const panier = createSlice({
   },
 })
 
-export const {panierset,panierremove} = panier.actions
+export const {panierset,panierremove,prixset,prixremove} = panier.actions
 
 export default panier.reducer

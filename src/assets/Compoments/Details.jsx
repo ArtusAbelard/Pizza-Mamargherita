@@ -13,9 +13,9 @@ export default function Details(props) {
     console.log(panier);
     
     return (
-        <div className='details w-screen h-screen flex flex-col items-center bg-slate-700'>
+            <div className='details w-[100%] h-screen flex flex-col items-center overflow-hidden bg-slate-700 relative'>            
             <Navbar></Navbar>
-            <div className='ewa h-[50rem] w-[90rem] bg-white flex flex-col items-center justify-center mt-11 rounded-3xl z-50'>
+            <div className='ewa overflow-hidden h-[50rem] w-[90rem] bg-white flex flex-col items-center justify-center mt-11 rounded-3xl z-50'>
                 <h1 className='text-black txtname font-bold text-6xl pb-5 '>{data[id].name}</h1>
                 <div className='w-full h-4/6  flex'>
                     <div className='w-1/2 h-full  flex '>
@@ -44,7 +44,9 @@ export default function Details(props) {
                     </div>
                 </div>
             </div>
-            <img className='pizzdetails h-[800px] w-[800px] bg-black absolute top-[19%] rounded-full left-[-19%]' src={data[id].img} alt="" />
+            <div className='h-[800px] w-[800px] absolute rounded-full -left-[22%] top-[15%]'>
+                <img className='pizzdetails h-full w-full bg-black rounded-full' src={data[id].img} alt="" />
+            </div>
         </div>
     )
 }
