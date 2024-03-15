@@ -30,10 +30,7 @@ export default function Home(props) {
                                 <Link to={`/Details/${id}`}>
                                 <div className="card-body h-[6rem] hover:bg-black rounded-b-xl hover:text-white flex justify-center items-center">
                                     <h2 className="card-title text-center text-2xl">{Element.name}</h2>
-                                    {/* <p>If a dog chews shoes whose shoes does he choose?</p> */}
-                                    {/* <div className="card-actions justify-end">
-                                    <button className="btn btn-primary">Buy Now</button>
-                                    </div> */}
+                                    
                                 </div>
                                 </Link>
                                 </div>

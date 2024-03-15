@@ -6,14 +6,14 @@ import data from './../../../public/Json/data.json'
 export default function Navbar(props) {
     const dispatch = useDispatch();
     const panier = useSelector((state) => state.panier)
-    console.log(panier.panier[0]);
+    
     
 
     return (
         <div className='w-full'>
                 <div className="navbar h-[6rem]  bg-[#DA291C]">
                 <div className="flex-1">
-                    <Link to={`/Home/`}><a className="btn btn-ghost text-2xl text-white">Chez Mamargherita.</a></Link>
+                    <Link to={`/Pizza-Mamargherita/`}><a className="btn btn-ghost text-2xl text-white">Chez Mamargherita.</a></Link>
                 </div>
                 <div className="flex-none">
                     <div className="dropdown dropdown-end">
@@ -37,7 +37,7 @@ export default function Navbar(props) {
                             </li>
                         </ul>
                         <div className="card-actions">
-                            <button className="btn btn-primary btn-block">View cart</button>
+                        <Link to={`/Panier/`}><button className="btn btn-primary btn-block">View cart</button></Link>
                         </div>
                         </div>
                     </div>

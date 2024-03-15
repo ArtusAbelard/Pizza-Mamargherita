@@ -24,6 +24,6 @@ export const panier = createSlice({
   },
 })
 
-export const {panierset} = panier.actions
+export const {panierset,panierremove} = panier.actions
 
 export default panier.reducer

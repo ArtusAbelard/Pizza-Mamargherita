@@ -6,10 +6,11 @@ import Details from './assets/Compoments/Details.jsx'
 import store from './App/Store.js'
 import { Provider } from 'react-redux'
 import { createBrowserRouter , RouterProvider  } from 'react-router-dom'
+import Panier from './assets/Compoments/Panier.jsx'
 
 const router = createBrowserRouter([
   {
-    path: '/Home',
+    path: '/Pizza-Mamargherita',
     element: 
       <App></App>                                                                                                                                                                                                                                                                  
   },
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
     path: '/Details/:id',
     element: 
      <Details></Details>                                                                                                                                                                                                                                                                 
+  },
+  {
+    path: '/Panier',
+    element: 
+     <Panier></Panier>                                                                                                                                                                                                                                                              
   }
 ])
 
