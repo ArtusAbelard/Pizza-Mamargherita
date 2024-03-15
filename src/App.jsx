@@ -2,14 +2,15 @@ import { useState } from 'react'
 import Home from './assets/Compoments/Home'
 import data from './../public/Json/data.json'
 import './App.css'
-
-
-
-
+import { useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 function App() {
   const [count, setCount] = useState(0)
-  console.log(data);
+  const dispatch = useDispatch();
+  const panier = useSelector((state) => state.panier)
+  // console.log(panier);
+  
 
   return (
     <div className=' w-screen overflow-hidden bgpizz h-screen flex flex-col  relative z-10 justify-center items-center'>
