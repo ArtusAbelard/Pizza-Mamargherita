@@ -4,14 +4,31 @@ import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
 import { panierset, prixset  } from '../Reducers/Panier';
 import { useSelector, useDispatch } from 'react-redux';
+import { useState } from 'react';
 
 export default function Home(props) {
     const dispatch = useDispatch();
     const panier = useSelector((state) => state.panier)
+    const [pizza, setpizza] = useState(props.data)
 
     function setlesenroulles(Element) {
         dispatch(panierset(Element.name))
         dispatch(prixset(Element.price)) 
+    }
+    // const Filter = (params) => {
+    //     setpizza(pizza.sort((a,b) => {
+    //         return a.price - b.price
+    //     }))
+    // }
+    const sortedPizzas = [...pizza].sort((a, b) => a.price - b.price);
+    console.log(sortedPizzas);
+    function sortedpizza(params) {
+        setpizza([...pizza].sort((a, b) =>  b.price - a.price))
+        
+    }
+    function lowsortedpizza(params) {
+        setpizza([...pizza].sort((a, b) =>  a.price - b.price))
+        
     }
 
     return (
@@ -20,7 +37,7 @@ export default function Home(props) {
             <div className='w-[90rem] h-[60rem]  flex justify-center items-center '>
                 <div className='w-[90rem] gap-16 z-30 h-[50rem] flex flex-wrap justify-center items-center rounded-xl '>
                     {
-                        props.data.map((Element,id)=>{
+                        pizza.map((Element,id)=>{
                             return(
                                 <div key={id} className=" card w-96 h-[350px] bg-base-100 shadow-xl">
                                 <figure className='h-[30rem]'>
@@ -55,8 +72,8 @@ export default function Home(props) {
                             <span className="badge">New</span>
                         </a>
                         </li> */}
-                        <li><a>High</a></li>
-                        <li><a>Low</a></li>
+                        <li onClick={()=>{sortedpizza()}}><a>High</a></li>
+                        <li onClick={()=>{lowsortedpizza()}}><a>Low</a></li>
                     </ul>
             </div>
 
