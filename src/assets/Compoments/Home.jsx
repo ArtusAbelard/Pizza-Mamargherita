@@ -33,8 +33,7 @@ export default function Home(props) {
                                     
                                 </div>
                                 </Link>
-                                </div>
-                                
+                                </div> 
                             )
                         })
                     }
@@ -43,23 +42,13 @@ export default function Home(props) {
             <div className="dropdown me-4 dropdown-end absolute right-[5rem] top-5">
                     <div tabIndex={0} role="button" className="btn btn-ghost w-20 btn-circle avatar">
                         <p className='text-2xl'>Price</p>
-                        {/* <div className="w-10 rounded-full flex justify-center items-center">
-                            <p>filter</p>
-                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                        </div> */}
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        {/* <li>
-                        <a className="justify-between">
-                            Profile
-                            <span className="badge">New</span>
-                        </a>
-                        </li> */}
+                        
                         <li><a>High</a></li>
                         <li><a>Low</a></li>
                     </ul>
             </div>
-
         </div>
     )
 }
